@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Sobre Saúde e Cuidados Pessoais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-list" id="navList">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#alimentacao">Alimentação</a></li>
+                <li><a href="#exercicios">Exercícios</a></li>
+                <li><a href="#saude-mental">Saúde Mental</a></li>
+                <li><a href="#imc">Calculadora de IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>Bem-vindo ao nosso site!</h1>
+        <p>Aqui você encontrará informações valiosas sobre hábitos saudáveis, alimentação, exercícios e saúde mental.</p>
+    </section>
+
+    <section id="alimentacao">
+        <h2>Alimentação Saudável</h2>
+        <p>Manter uma alimentação balanceada é fundamental para a saúde e o bem-estar. Aqui estão algumas dicas para ajudá-lo a manter uma dieta equilibrada:</p>
+        <ul>
+            <li>Consuma uma variedade de alimentos, incluindo frutas, vegetais, proteínas magras e grãos integrais.</li>
+            <li>Evite alimentos processados e ricos em açúcares e gorduras saturadas.</li>
+            <li>Inclua fontes de proteína como frango, peixe, legumes e nozes.</li>
+            <li>Opte por grãos integrais, como arroz integral, quinoa e aveia.</li>
+            <li>Certifique-se de se manter hidratado, bebendo bastante água ao longo do dia.</li>
+        </ul>
+        <p>Exemplos de refeições saudáveis:</p>
+        <ul>
+            <li>Café da manhã: Iogurte natural com frutas e granola.</li>
+            <li>Almoço: Peito de frango grelhado e legumes.</li>
+            <li>Jantar: Salada, pepino e um filé de peixe assado.</li>
+        </ul>
+    </section>
+
+    <section id="exercicios">
+        <h2>Exercícios Físicos</h2>
+        <p>A prática regular de exercícios é essencial para manter a saúde física e mental. Aqui estão algumas sugestões de atividades físicas para diferentes níveis:</p>
+        <h3>Iniciantes:</h3>
+        <ul>
+            <li>Caminhada rápida por 30 minutos, 3-4 vezes por semana.</li>
+            <li>Exercícios de alongamento e flexibilidade, como yoga.</li>
+            <li>Atividades leves como dança ou natação.</li>
+        </ul>
+        <h3>Intermediários:</h3>
+        <ul>
+            <li>Treinos de resistência, como musculação, 3 vezes por semana.</li>
+            <li>Corrida moderada por 30-45 minutos, 3 vezes por semana.</li>
+            <li>Exercícios intervalados de alta intensidade (HIIT) 2 vezes por semana.</li>
+        </ul>
+        <h3>Avançados:</h3>
+        <ul>
+            <li>Treinamento de força avançado, incluindo levantamento de pesos e exercícios funcionais.</li>
+            <li>Corrida longa e intervalada, aumentando gradualmente a distância e a intensidade.</li>
+            <li>Participação em esportes competitivos ou treinos especializados.</li>
+        </ul>
+    </section>
+
+    <section id="saude-mental">
+        <h2>Saúde Mental</h2>
+        <p>Manter uma boa saúde mental é essencial para o bem-estar geral. Aqui estão algumas estratégias e dicas para cuidar da saúde mental:</p>
+        <ul>
+            <li>Pratique técnicas de meditação e mindfulness para reduzir o estresse e aumentar a consciência.</li>
+            <li>Gerencie o estresse com atividades relaxantes como leitura, hobbies ou caminhadas ao ar livre.</li>
+            <li>Mantenha um equilíbrio saudável entre trabalho e vida pessoal para evitar o burnout.</li>
+            <li>Busque apoio de amigos, familiares ou grupos de apoio quando necessário.</li>
+            <li>Considere consultar um psicólogo ou profissional de saúde mental se estiver enfrentando dificuldades emocionais persistentes ou estresse que afete sua qualidade de vida.</li>
+        </ul>
+    </section>
+
+    <section id="imc">
+        <h2>Calculadora de IMC</h2>
+        <p>O IMC ou Índice de Massa Corporal é uma medida utilizada para avaliar o estado nutricional de uma pessoa com base em seu peso e altura. Use a calculadora abaixo para verificar o seu IMC e entender sua classificação.</p>
+        <form id="imcForm">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" step="0.1" required>
+            <label for="altura">Altura (m):</label>
+            <input type="number" id="altura" name="altura" step="0.01" required>
+            <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+        </form>
+        <div id="resultadoIMC"></div>
+        <div id="categoriaIMC"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
